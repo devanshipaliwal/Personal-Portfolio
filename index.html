@@ -3,35 +3,39 @@
     <!--header-->
     <head>
         <title>Devanshi's Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styling.css">
     </head>
     
     <!--body-->
     <body>
         <div id="container">  
-            <div class="navbar">
-                <img class="logo" src = Images/logo.png alt="logo">
+            <nav>
+                <div class="logo">
+                    <img class="logo" src = Images/logo.png alt="logo">    
+                </div>
 
-                <nav> 
-                    </div>
-                    <ul class="nav-links">
-                        <li> <a href="#">Home</a> </li>
-                        <li> <a href="#">Resume</a> </li>
-                        <li> <a href="#">About</a> </li>
-                    </ul>  
-                </nav>
-            </div>
+                <ul class="nav-links">
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="/Users/devan/Dropbox/My%20PC%20(LAPTOP-2AJOUJEA)/Downloads/rough%20resume%20(not%20final).pdf">Resume</a> </li>
+                    <li> <a href="about.html">About</a> </li>
+                </ul>  
+            </nav>
 
             <div id ="header">
                 <h1>Hi, I'm Devanshi</h1>
             </div>
 
             <div id ="content">
-                <p1>I’m currently studying <strong>Systems Design Engineering</strong> at the University of Waterloo, and exploring my interests in the vast world of design. </p1>
-                <img class="email" src = Images/email.png alt="illustration">
-                <img class="book" src = Images/books.png alt="illustration">
+                <p1>I’m currently studying <strong>Systems Design Engineering</strong> at the University of Waterloo, and exploring my interests in the vast world of design. </p1><br>
+                <div>
+                    <span style="padding-right:40px;">
+                        <img class="email" src = Images/email.png alt="illustration">
+                        <img class="book" src = Images/books.png alt="illustration"><br>
+                    </span>
+                </div>
                 <p2>Statflo Internship</p2>
-                <p3>Goodreads UI/UX Case Study</p3>
+                <p2>Goodreads UI/UX Case Study</p2>   
             </div>
         </div>
     </body>
@@ -55,4 +59,10 @@
     margin: auto;
     align-items: flex-end;
 }
+                <div class="images">
+                    <img class="email" src = Images/email.png alt="illustration">
+                    <img class="book" src = Images/books.png alt="illustration">
+                </div>
+        border: 1px rgb(0, 0, 0) solid;
+
 -->

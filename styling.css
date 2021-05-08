@@ -4,27 +4,38 @@
     box-sizing: border-box;
 }
 
+.container{
+    width: 100%;
+    min-height: 100%;
+}
+
 h1{
     color: #008E86;
-    font-size: 48px;
+    font-size: 32px;
     font-family: Arial, Helvetica, sans-serif;
-
+    padding-bottom: 40px;
+    font-weight: lighter;
 }
 
 p1{
+    background-color: rgb(150, 238, 238);
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
-
+    padding-left: 180px;
+    width: 40%;
 }
 
+.logo{
+    width: 60px;
+}
 nav{
     display: flex;
-    border: 1px #ccc solid;
+    background-color: rgb(232, 161, 250);
     justify-content: space-around;
-    align-items: right;
-    min-height: 8vh;
-    font-size: 24px;
+    align-items: center;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 24px;
 }
 
 .nav-links{
@@ -42,3 +53,28 @@ nav{
 .nav-links li{
     list-style: none;
 }
+
+.email, .book{
+    width: 1000px;
+    height: auto;
+    padding: 40px;
+}
+
+p5{
+    font-size: 16px;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-text{
+    max-width: 60%;
+    margin: 40px 80px;
+}
+
+
+/*  
+    in h1
+    margin-left: 100px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    *\
