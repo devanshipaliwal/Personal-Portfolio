@@ -129,11 +129,16 @@ nav .logo {
 }
 
 /*Nav*/
+.mainMenu .current{
+    color: #008E86;
+}
+
 nav {
     background: #ffffff;
     color: black;
     display: flex;
     justify-content: space-between;
+    margin-top: 32px;
 }
 nav .mainMenu {
     display: flex;
@@ -144,7 +149,7 @@ nav .mainMenu li a {
     padding: 15px;
     text-decoration: none;
     color: black;
-    font-size: 1.5rem;
+    font-size: 16px;
 }
 nav .mainMenu li a:hover {
     background: #008E86;
