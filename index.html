@@ -10,9 +10,38 @@
     <!--body-->
     <body>
         <div class="container">  
-            <nav>
+            <div class="main-header">
+                <h>Hi, I'm Devanshi</h>
+            </div>
+            <div class ="intro-statement">
+                <div class="intro"> 
+                    <p>I’m currently studying Systems Design Engineering at the University of Waterloo, and exploring my interests in the vast world of design. </p><br>
+                </div>
+            </div>
+            <div class="side-by-side">
+                <div class="column-double">
+                    <a href="statflo.html"> <img class="email" src = Images/email.png alt="illustration"></a>
+                    <div class="case-study-title">
+                        <a href="statflo.html">Statflo Internship</a>
+                    </div>
+                </div>
+                <div class="column-double">
+                    <a href="goodreads.html"> <img class="book" src = Images/books.png alt="illustration"></a><br>
+                    <div class="case-study-title">
+                        <a href="goodreads.html">Goodreads UI/UX Case Study</a><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
+
+
+<!--
+ <nav>
                 <div class="logo">
-                    <img class="logo" src = Images/logo.png alt="logo">    
+                    <img class="logo" src = Images/newlogo.png alt="logo">    
                 </div>
 
                 <ul class="nav-links">
@@ -22,51 +51,51 @@
                 </ul>  
             </nav>
 
-            <div class="main-header">
-                <h>Hi, I'm Devanshi</h>
-            </div>
-
-            <div class ="intro-statement">
-                <p>I’m currently studying Systems Design Engineering at the University of Waterloo, and exploring my interests in the vast world of design. </p><br>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <a href="statflo.html"> <img class="email" src = Images/email.png alt="illustration"></a>
-                </div>
-                <div class="column">
-                    <a href="goodreads.html"> <img class="book" src = Images/books.png alt="illustration"></a><br>
-                </div>
-            </div>
-            <div class="casestudy-titles">
-                <p>Statflo Internship</p>
-                <p>Goodreads UI/UX Case Study</p>   
-            </div>
-        </div>
-    </body>
-
-</html>
 
 
-<!--
-     this is where title for the tab comes, link to css sheet, and other words to trigger search functionality
- 
-    block level tabs, start a new line, take full width
-    ex. div, h1, h6, p, form, etc
-    inline only take encessary width, dont start on new line
-    ex. span, img, <a> (link tag to go to another page)
-        href directs to another page
--->
-<!-- 
+
+
+
+
 .navbar{
     min-height: 8vh;
     display: flex;
     margin: auto;
     align-items: flex-end;
 }
-                <div class="images">
-                    <img class="email" src = Images/email.png alt="illustration">
-                    <img class="book" src = Images/books.png alt="illustration">
-                </div>
-        border: 1px rgb(0, 0, 0) solid;
+
+/*nav bar Styling*/ 
+.logo{
+    width: 100px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    padding: 24px;
+    position: relative;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    top: 50%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+
+
+
 
 -->

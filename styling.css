@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 .container{
     min-height: 100%;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
 }
 
 /*Home Page Styling*/ 
@@ -17,15 +19,20 @@
     color: #008E86;
     font-size: 28px;
     padding-bottom: 40px;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 .intro-statement{
     margin: auto;
-    max-width: 60%;
+    width: 60%;
     word-spacing: 1px;
     line-height: 1.7;
     font-size: 16px;
+    padding-bottom: 80px;
+}
+
+.intro{
+    width: 70%;
 }
 
 .row{
@@ -42,60 +49,165 @@
 .column {
     float:left;
     width:50%;
+    height: 100px
 }
 
-.casestudy-titles{
-    background-color: crimson;
+.row-statflo{
+    margin: auto;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
 }
+
+.column-statflo{
+    width:25%;
+    padding-right: 10px;
+}
+
+.column-side-by-side{
+    width:50%;
+    margin-bottom: 20px;
+}
+
+.intro-side-by-side{
+    margin: auto;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+}
+
+@media screen and (max-width: 1200px){
+    .column-statflo{
+        width:40%
+    }
+}
+
+@media screen and (max-width: 600px){
+    .column-statflo{
+        width: 90%
+    }
+}
+
+.book-image1{
+    width: 100%;
+}
+
+.text-side1{
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+@media screen and (max-width: 1200px){
+    .intro-side-by-side{
+        width:50%
+    }
+}
+
+@media screen and (max-width: 900px){
+    .column-side-by-side{
+        width: 100%
+    }
+}
+
+ /*2 column styling*/ 
+
+.side-by-side{
+    margin: auto;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.column-double{
+    width:50%;
+}
+
+@media screen and (max-width: 1200px){
+    .column-double{
+        width:40%
+    }
+}
+
+@media screen and (max-width: 600px){
+    .column-double{
+        width: 90%
+    }
+}
+
+.case-study-title{
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.case-study-title a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #008E86;
+}
+
 
 /*About Page Styling*/ 
 .header-about{
     margin: auto;
-    max-width: 60%;
+    max-width: 80%;
     color: #008E86;
     font-size: 24px;
     padding-bottom: 40px;
     padding-top: 40px;
 }
 
+
+.about-images{
+    width: 100%;
+    padding-left: 40px;
+}
+
 .text-about{
     margin: auto;
-    max-width: 60%;
+    width: 80%;
+    height: auto;
     font-size: 16px;
     font-size: 16px;
     line-height: 30px;
-}
-
-/*nav bar Styling*/ 
-.logo{
-    width: 60px;
-}
-nav{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    font-size: 16px;
-    padding: 24px;
-    position: relative;
+    flex-flow: wrap;
 }
 
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-    top: 50%;
+.sidebyside{
+    width: 50%;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: black;
-    font-weight: 300;
+@media screen and (max-width: 1200px){
+    .sidebyside{
+        width:40%
+    }
 }
 
-.nav-links li{
-    list-style: none;
+@media screen and (max-width: 900px){
+    .sidebyside{
+        width: 90%
+    }
 }
-
 
 /*Case Study Text Styling*/ 
 
@@ -127,14 +239,14 @@ ul.ordered-lists{
 
 .prototype-button{
     width: 150px;
-    height: 50px;
+    height: 30px;
     border: none;
     color: rgb(0, 0, 0);
-    border-radius: 2px;
+    border-radius: 1px;
     transition: ease-out 0.3s;
-    font-size: 16px;
+    font-size: 14px;
     outline: none;
-    border: 3px solid #008E86;
+    border: 1.5px solid #008E86;
     background-color: white;
     color: #008E86;
     position: relative;
@@ -169,14 +281,23 @@ ul.ordered-lists{
 /*goodreads Styling*/ 
 
 .book-image{
-    max-width: 60%;
     margin: auto;
-    width: 200px;
+    width: 300px;
 }
 
+.text-side{
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
 .goodreads-image{
-    display: inline-block;
-    align-items: center;
+    margin: auto;
+    max-width: 60%;
+    align-items: baseline;
+    display: flex;
+    margin-bottom: 40px;
 }
 
 .gimage{
@@ -190,11 +311,12 @@ ul.ordered-lists{
 .goodreads-title h1{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    font-size: 24px;
+    font-size: 22px;
     padding-bottom: 40px;
     padding-top: 20px;
     margin: auto;
     max-width: 60%;
+    line-height: 1.4;
 }
 
 

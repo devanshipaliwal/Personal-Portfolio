@@ -4,51 +4,52 @@
     <head>
         <title>Devanshi's Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
         <link rel="stylesheet" href="styling.css">
     </head>
     
-    <!--body-->
+    <!--body--> 
     <body> 
-        <nav>
-            <div class="logo">
-                <img class="logo" src = Images/logo.png alt="logo">    
+        <div class="container"> 
+            
+            <div class="goodreads-title">
+                <h1>Goodreads: A UI/UX Case Study</h1>
+            </div>
+            <div class="intro-side-by-side">
+                <div class="column-side-by-side">
+                    <img class="book-image1" src = Images/books.png alt="illustration">
+                </div>
+                <div class="column-side-by-side">
+                    <p class="text-side1">    
+                        If you're a big book reader, chances are you've heard of Goodreads. Goodreads is a cataloguing application that allows users to browse, review, and track all of their favorite books and quotes. As an avid book reader, I love the concept and practical application of Goodreads. As a designer, I find its current user experience unimaginative and unacceptable.<br><br>
+                    </p>
+                </div>
+            </div>     
+
+            <div class="side-by-side">
+                <div class="column-double">
+                    <p class="section-header">
+                        My Role<br><br>
+                    </p>
+                    <p class="text">    
+                        This case study will evaluate the overall usability of the current mobile Goodreads application, establish common user pain points, and aim to develop feasible and practical designs to tackle these issues.<br><br>Date: March 13 - 15th, 2021 (3 days) <br><br>                    </p>
+                </div>
+                <div class="column-doubl">
+                    <p class="section-header">
+                        Methodologies<br><br>
+                    </p>
+                    <p class="text">  
+                        Research & Data Analysis<br>
+                        Heuristic Evaluation<br>
+                        Red Route Evaluation (RRAs)<br>
+                        User Personas<br>
+                        Wireframing<br>
+                        Prototyping<br>
+                    </p><br>
+                </div>
             </div>
 
-            <ul class="nav-links">
-                <li> <a href="index.html">Home</a> </li>
-                <li> <a href="/Users/devan/Dropbox/My%20PC%20(LAPTOP-2AJOUJEA)/Downloads/rough%20resume%20(not%20final).pdf">Resume</a> </li>
-                <li> <a href="about.html">About</a> </li>
-            </ul>  
-        </nav>
-        <div class="container"> 
-            <div class="goodreads-image">
-                <img class="book-image" src = Images/books.png alt="illustration">
-                <div class="goodreads-title">
-                    <h1>Goodreads: A UI/UX Case Study</h1>
-                </div>
-            </div>                
-
             <div class ="goodreads-paragraph">
-                <p class="text">    
-                    If you're a big book reader, chances are you've heard of Goodreads. Goodreads is a cataloguing application that allows users to browse, review, and track all of their favorite books and quotes. As an avid book reader, I love the concept and practical application of Goodreads. As a designer, I find its current user experience unimaginative and unacceptable. <br><br>
-                </p>
-                <p class="section-header">
-                    My Role<br><br>
-                </p>
-                <p class="text">    
-                    This case study will evaluate the overall usability of the current mobile Goodreads application, establish common user pain points, and aim to develop feasible and practical designs to tackle these issues.<br><br>Date: March 13 - 15th, 2021 (3 days) <br><br>
-                </p>
-                <p class="section-header">
-                    Methodologies<br><br>
-                </p>
-                <p class="text">  
-                    Research & Data Analysis<br>
-                    Heuristic Evaluation<br>
-                    Red Route Evaluation (RRAs)<br>
-                    User Personas<br>
-                    Wireframing<br>
-                    Prototyping<br>
-                </p><br>
                 <p class="section-header">
                     Constraints<br><br>
                 </p>
@@ -62,50 +63,58 @@
                     Note; all research, sites, and images collected will be noted below this study.<br><br>
                     I first evaluated the Goodreads UI against the 10 Usability Heuristics for User Interface Design. Due to limited resources, I gathered my information and user perspective from online reviews of the mobile app and personal use. From this, I was able to narrow my exploration down to 3 major heuristics which I noticed were most prominently lacking in the application. <br><br>
                     Recognition rather than recall<br>
-                    <ul class="ordered-lists">
-                        <li>The user is not presented with recently viewed books on the home page, making it difficult to trace steps or visit previous books/authors/pages. <br></li>
-                        <li>On certain pages, Goodreads permits swiping to exit in/out of screens, but this is not a consistent feature across the app, making it difficult and frustrating to consistently learn new navigation. This also effects the users mental model of the app. <br></li>
-                        <li>Users are not offered recommended books on their discover page based on their previous selections. <br><br></li>            
-                    </ul>    
+                </p>
+                <ul class="ordered-lists">
+                    <li>The user is not presented with recently viewed books on the home page, making it difficult to trace steps or visit previous books/authors/pages. <br></li>
+                    <li>On certain pages, Goodreads permits swiping to exit in/out of screens, but this is not a consistent feature across the app, making it difficult and frustrating to consistently learn new navigation. This also effects the users mental model of the app. <br></li>
+                    <li>Users are not offered recommended books on their discover page based on their previous selections. <br><br></li>            
+                </ul>    
+                <p class="text">    
                     Consistency and Standards<br>
-                    <ul class="ordered-lists">
-                        <li>Users are not able to tailor common actions (ex. have commonly visited authors or books bookmarked) <br> </li>
-                        <li>All calls to action are not consistent in terms or layout, functionality, and overall design <br> </li>
-                        <li>Difficult to discern between headers/book titles/author names due to inconsistently in presentation <br><br> </li>
-                    </ul>    
-                    Aesthetic and minimalist design<br>
-                    <ul class="ordered-lists">
-                        <li>App does not maintain consistent pixel spacing between UI elements <br> </li>
-                        <li>Hierarchy of elements is choppy and there are no clear separators of information <br> </li>
-                        <li>Difficult to follow certain use cases (ex. adding a book to a shelf, favoriting a shelf, then removing the shelf)<br><br></li>
-                    </ul>
-                </p> 
+                </p>
+                <ul class="ordered-lists">
+                    <li>Users are not able to tailor common actions (ex. have commonly visited authors or books bookmarked) <br> </li>
+                    <li>All calls to action are not consistent in terms or layout, functionality, and overall design <br> </li>
+                    <li>Difficult to discern between headers/book titles/author names due to inconsistently in presentation <br><br> </li>
+                </ul> 
+                <p class="text">    
+                    Aesthetic and Minimalist Design<br>
+                </p>   
+                <ul class="ordered-lists">
+                    <li>App does not maintain consistent pixel spacing between UI elements <br> </li>
+                    <li>Hierarchy of elements is choppy and there are no clear separators of information <br> </li>
+                    <li>Difficult to follow certain use cases (ex. adding a book to a shelf, favoriting a shelf, then removing the shelf)<br><br></li>
+                </ul>
                 <p class="section-header">
                     High Level Analysis<br><br>
                 </p>
                 <p class="text">   
                     Next, I took a closer look at some of the core feature or functionality issues users currently face. Even at a first glance, the Goodreads application screams out many of its high level issues.<br><br> 
-                    
                     No feature to give half star ratings <br>
-                    <ul class="ordered-lists">
-                        <li>For an application that prides itself on hosting reviews, Goodreads surprisingly has no functionality for users to add half stars to their book ratings. Instead, users must choose a whole number from 0-5 stars, which has lead to skewed book ratings.<br><br></li>
-                    </ul>
-                    Inconvenient methods of updating book progress<br>
-                    <ul class="ordered-lists">
-                        <li>Users need to enter either a page number or percentage when updating their progress for a book they are currently reading. For audiobook and kindle readers, where page numbers and relative completion are not easily listed, this is incredibly frustrating.<br><br></li>
-                    </ul>
-
-                    Users can rate books they have not read<br>
-                    <ul class="ordered-lists">
-                        <li>Individual user ratings have a large influence on the overall rating of a book. For many young/new authors, every rating is valuable to building their reputation and book prestige. While this doesn't skew overall book ratings for famous books, false reviews can still damage the reputation of both book & author.<br><br></li>
-                    </ul>
-                    
-                    Dull "Search" page<br>
-                    <ul class="ordered-lists">
-                        <li>Goodreads (on mobile) establishes separate pages for "Discovery" and "Search" with their bottom navigation bar. However, the search page is uninviting and generally unexciting to use. There is a large amount of unnecessary white space. Exploration of genres requires navigation to secondary page (which should intuitively be present front and center when searching).
-                        </li>                
-                    </ul>
                 </p> 
+                <ul class="ordered-lists">
+                    <li>For an application that prides itself on hosting reviews, Goodreads surprisingly has no functionality for users to add half stars to their book ratings. Instead, users must choose a whole number from 0-5 stars, which has lead to skewed book ratings.<br><br></li>
+                </ul>
+                <p class="text">   
+                    Inconvenient methods of updating book progress<br>
+                </p>
+                <ul class="ordered-lists">
+                    <li>Users need to enter either a page number or percentage when updating their progress for a book they are currently reading. For audiobook and kindle readers, where page numbers and relative completion are not easily listed, this is incredibly frustrating.<br><br></li>
+                </ul>
+                <p class="text">   
+                    Users can rate books they have not read<br>
+                </p>
+                <ul class="ordered-lists">
+                    <li>Individual user ratings have a large influence on the overall rating of a book. For many young/new authors, every rating is valuable to building their reputation and book prestige. While this doesn't skew overall book ratings for famous books, false reviews can still damage the reputation of both book & author.<br><br></li>
+                </ul>
+                <p class="text">   
+                    Dull "Search" Page<br>
+                </p>
+                <ul class="ordered-lists">
+                    <li>Goodreads (on mobile) establishes separate pages for "Discovery" and "Search" with their bottom navigation bar. However, the search page is uninviting and generally unexciting to use. There is a large amount of unnecessary white space. Exploration of genres requires navigation to secondary page (which should intuitively be present front and center when searching).
+                    </li>                
+                </ul>
+                
                 <img class="gimage" src = Images/RRAS.png alt="illustration">
                 <p class="section-header">
                     User Personas<br><br>
@@ -141,5 +150,3 @@
     </body>
 </html>
 
-
-<!--fix opening image and title, fix unordered list change to font and styling, move prototype button?-->
