@@ -9,14 +9,14 @@
 .container{
     min-height: 100%;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 50px;
 }
 
 /*Home Page Styling*/ 
 .main-header{
     margin: auto;
-    max-width: 60%;
+    max-width: 75%;
     color: #008E86;
     font-size: 28px;
     padding-bottom: 40px;
@@ -25,11 +25,11 @@
 
 .intro-statement{
     margin: auto;
-    width: 60%;
+    width: 75%;
     word-spacing: 1px;
     line-height: 1.7;
     font-size: 16px;
-    padding-bottom: 80px;
+    padding-bottom: 24px;
 }
 
 .intro{
@@ -38,7 +38,7 @@
 
 .row{
     margin: auto;
-    max-width: 60%;
+    max-width: 75%;
 }
 
 .email, .book{
@@ -55,11 +55,10 @@
 
 .row-statflo{
     margin: auto;
-    width: 60%;
+    width: 75%;
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     flex-flow: wrap;
 }
 
@@ -70,12 +69,11 @@
 
 .column-side-by-side{
     width:50%;
-    margin-bottom: 20px;
 }
 
 .intro-side-by-side{
     margin: auto;
-    width: 60%;
+    width: 75%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -91,7 +89,7 @@ nav {
     display: flex;
     justify-content: space-between;
     font-family: Poppins;
-    max-width: 60%;
+    max-width: 75%;
     margin: auto;
 }
 nav .mainMenu {
@@ -101,6 +99,7 @@ nav .mainMenu {
 nav .mainMenu li a {
     display: inline-block;
     padding: 15px;
+    margin-top: 10px;
     text-decoration: none;
     color: #fff;
     font-size: 1.5rem;
@@ -122,10 +121,11 @@ nav .mainMenu .closeMenu , .icons i {
 nav .logo {
     font-size: 50px;
     cursor: pointer;
+    margin-top: 12px;
     background: linear-gradient(45deg,#f73764 0%,#81dbf7 33.33%, #f73764 66.67%, #81dbf7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding:15px;
+    padding:15px 0px;
 }
 
 /*Nav*/
@@ -245,11 +245,6 @@ nav .logo {
 }
 /*Responsiveness*/
 
-@media screen and (max-width: 1200px){
-    .column-statflo{
-        width:40%
-    }
-}
 
 @media screen and (max-width: 600px){
     .column-statflo{
@@ -259,22 +254,17 @@ nav .logo {
 
 .book-image1{
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .text-side1{
-    line-height: 1.6;
-    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.9;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    margin-top: 10px;
     margin-left: 40px;
     margin-right: 40px;
 }
 
-@media screen and (max-width: 1200px){
-    .intro-side-by-side{
-        width:50%
-    }
-}
 
 @media screen and (max-width: 900px){
     .column-side-by-side{
@@ -286,28 +276,16 @@ nav .logo {
 
 .side-by-side{
     margin: auto;
-    width: 60%;
+    width: 75%;
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     flex-flow: wrap;
 }
 
 .column-double{
     width:50%;
-}
-
-@media screen and (max-width: 1200px){
-    .column-double{
-        width:40%
-    }
-}
-
-@media screen and (max-width: 600px){
-    .column-double{
-        width: 90%
-    }
+    padding-right: 20px;
 }
 
 .case-study-title{
@@ -329,7 +307,7 @@ a:hover{
 /*About Page Styling*/ 
 .header-about{
     margin: auto;
-    max-width: 80%;
+    max-width: 75%;
     color: #008E86;
     font-size: 24px;
     padding-bottom: 40px;
@@ -339,19 +317,26 @@ a:hover{
 
 .about-images{
     width: 100%;
-    padding-left: 40px;
+    padding-left: 24px;
 }
+
+@media(max-width: 800px){
+    .about-images{
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+
 
 .text-about{
     margin: auto;
-    width: 80%;
+    width: 75%;
     height: auto;
     font-size: 16px;
     font-size: 16px;
     line-height: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     flex-flow: wrap;
 }
 
@@ -359,15 +344,16 @@ a:hover{
     width: 50%;
 }
 
-@media screen and (max-width: 1200px){
-    .sidebyside{
-        width:40%
-    }
+.sidebyside p5{
+    padding-right: 5px;
 }
 
 @media screen and (max-width: 900px){
     .sidebyside{
-        width: 90%
+        width: 100%
+    }
+    .about-images{
+        padding-left: 0px;
     }
 }
 
@@ -376,18 +362,18 @@ a:hover{
 
 .section-header{
     font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .text{
-    line-height: 1.6;
-    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.9;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
 }
 
 .bigger-section-headers{
     font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
 
@@ -395,12 +381,12 @@ ul.ordered-lists{
     font-size: 14px;
     list-style-position: outside;
     padding-left: 15px;
-    line-height: 1.6;
+    line-height: 1.9;
 
 }
 
 .prototype-button{
-    width: 150px;
+    width: 175px;
     height: 30px;
     border: none;
     color: rgb(0, 0, 0);
@@ -449,14 +435,14 @@ ul.ordered-lists{
 
 .text-side{
     line-height: 1.6;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     padding-left: 40px;
     padding-right: 40px;
 }
 .goodreads-image{
     margin: auto;
-    max-width: 60%;
+    max-width: 75%;
     align-items: baseline;
     display: flex;
     margin-bottom: 40px;
@@ -471,25 +457,57 @@ ul.ordered-lists{
 }
 
 .goodreads-title h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 450;
     font-size: 22px;
     padding-bottom: 40px;
-    padding-top: 20px;
+    padding-top: 40px;
     margin: auto;
-    max-width: 60%;
+    max-width: 75%;
     line-height: 1.4;
 }
 
 
 .goodreads-paragraph{
     margin: auto;
-    max-width: 60%;
+    max-width: 75%;
 }
+
+@media screen and (max-width: 1024px){
+    .column-double{
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 900px){
+    .column-side-by-side{
+        width:100%
+    }
+    .text-side1{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+
 
 /*  
     in h1
     margin-left: 100px;
     margin-bottom: 40px;
     margin-top: 40px;
+    
+@media screen and (max-width: 1200px){
+    .column-statflo{
+        width:40%
+    }
+}    
+    
+
+@media screen and (max-width: 1200px){
+    .intro-side-by-side{
+        width:50%
+    }
+}
+    
     *\
